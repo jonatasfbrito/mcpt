@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+
+}); 
+  </script>
+	<style type="text/css">
+	ion-icon {
+		font-size: 35px;
+	}
+    </style>
+	<title>Horário Escolar</title>
+</head>
+
+
+<body>
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <ion-icon name="school-outline"></ion-icon>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="/" class="navbar-item">
+        Home
+      </a>
+
+      <a href="/livros" class="is-7 navbar-item">
+        Livros
+      </a>
+
+      <a href="/horario" class="is-7 navbar-item">
+        Horário
+      </a>
+
+      <a href="/suporte" class="is-7 navbar-item">
+        Suporte
+      </a>
+
+       <a href="/converter_pdf" class="navbar-item">
+        Converter PDF
+      </a>
+      
+
+      </div>
+    </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+<section class="section">
+	<h1 class="title">Olá :)</h1>
+	<h2 class="subtitle">
+  	Você pode <strong><i>fazer o download</i></strong> ou <strong><i>visualizar</i></strong> o horário escolar a seguir.
+  </h2>
+</section>
+
+
+<article class="message">
+  <div class="message-header">
+    <p>Caso haja algum problema, por favor contate o <a href="/suporte">Administrativo</a></p>
+    <button class="delete" aria-label="delete"></button>
+  </div>
+  <div class="message-body">
+  <a href="/baixar-horario" class="button is-dark is-fullwidth is-rounded is-outlined">
+  	Baixar PDF
+  </a>
+  	<br></br>
+  	<button class="button is-dark is-fullwidth is-rounded is-outlined" title="Opção indisponível no momento" disabled>
+  		Visualizar Imagem(s)
+  	</button>
+  </div>
+</article>
+
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      &copy; EEFM Maria Conceição Porfírio Teles 2022 - Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+</body>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EEFM MCPT</title>
+	<style type="text/css">
+		ion-icon {
+  font-size: 35px;
+}
+	</style>
+</head>
+
+
+<body>
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <ion-icon name="school-outline"></ion-icon>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="/" class="navbar-item">
+        Home
+      </a>
+
+      <a href="/livros" class="is-7 navbar-item">
+        Livros
+      </a>
+
+      <a href="/horario" class="is-7 navbar-item">
+        Horário
+      </a>
+
+      <a href="/suporte" class="navbar-item">
+        Suporte
+      </a>
+
+       <a href="/converter_pdf" class="navbar-item">
+        Converter PDF
+      </a>
+
+      </div>
+    </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<br></br>
+
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Jônatas | Desenvolvedor
+    </p>
+    <button class="card-header-icon" aria-label="more options">
+      <span class="icon">
+        <i class="fas fa-angle-down" aria-hidden="true"></i>
+      </span>
+    </button>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Você pode entrar em contato para sugestões/reportar erros.
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="https://instagram.com/jonatasfbrito" class="card-footer-item">Instagram</a>
+    <a href="https://t.me/j0n4tas" class="card-footer-item">Telegram</a>
+    <a href="https://wa.me/+558584082820" class="card-footer-item">Whatsapp</a>
+  </footer>
+</div>
+
+
+
+<br></br>
+
+<footer class="footer initial-scale">
+  <div class="content has-text-centered">
+    <p>
+      &copy; EEFM Maria Conceição Porfírio Teles 2022 - Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
+
+</body>
+
+
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+
+}); 
+  </script>
+
+</html>
